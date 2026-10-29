@@ -1,0 +1,37 @@
+# Excel INDEX and MATCH Functions
+
+## 1. Introduction
+INDEX and MATCH are Excel functions used together to look up and retrieve specific information from a dataset. They are useful alternatives to VLOOKUP and offer flexible lookup options.
+
+## 2. How They Work
+- **INDEX:** Returns a value from a specified position in a range.
+- **MATCH:** Finds the position of a particular value in a range.
+- **INDEX + MATCH:** MATCH finds the position, and INDEX returns the corresponding value.
+
+## 3. Syntax
+
+`=INDEX(array, row_num)`
+
+`=MATCH(lookup_value, lookup_array, 0)`
+
+Combined formula:
+
+`=INDEX(B2:B4, MATCH("Amit", A2:A4, 0))`
+
+## 4. Example
+
+| Employee | Salary |
+|---|---:|
+| Rahul | 25000 |
+| Amit | 30000 |
+| Priya | 35000 |
+
+The combined formula returns **30000**, which is Amit's salary.
+
+## 5. Uses
+- Finding employee salaries and IDs.
+- Retrieving product prices.
+- Searching for specific values in large datasets.
+- Performing flexible lookups in Data Analytics.
+
+**Key takeaway:** MATCH finds the position, while INDEX returns the value at that position.
